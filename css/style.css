@@ -4,7 +4,25 @@ td {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center !important;
 }
+/* 4 个 td 的行：每个 25% */
+table tr:has(> td:nth-child(4)) > td {
+    width: 25%;
+}
 
+/* 3 个 td 的行：每个 33.33%（排除 4 个的情况）*/
+table tr:has(> td:nth-child(3)):not(:has(> td:nth-child(4))) > td {
+    width: 33.3333%;
+}
+
+/* 2 个 td 的行：每个 50%（排除 3/4 个的情况）*/
+table tr:has(> td:nth-child(2)):not(:has(> td:nth-child(3))) > td {
+    width: 50%;
+}
+
+/* 1 个 td 的行：100%（排除 2/3/4 个的情况）*/
+table tr:has(> td:nth-child(1)):not(:has(> td:nth-child(2))) > td {
+    width: 100%;
+}
 ul li {
     width: 66px;
     text-align: center;
