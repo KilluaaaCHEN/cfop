@@ -11,7 +11,7 @@ function createToggleButton() {
     button.style.cssText = `
             position: fixed;
             top: 100px;
-            right: 111px;
+            right: 0px;
             z-index: 9999;
             padding: 30px 50px;
             background: linear-gradient(45deg, #4CAF50, #2196F3);
