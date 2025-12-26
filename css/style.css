@@ -5,6 +5,11 @@ td {
     text-align: center !important;
 }
 
+ul li {
+    width: 66px;
+    text-align: center;
+}
+
 table a {
     color: rgb(0, 0, 238) !important;
 }
