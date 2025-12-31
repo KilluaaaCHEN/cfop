@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
 </head>
 <body>
-
+<!-- 导航 -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container">
         <a class="navbar-brand" href="index.html">Rubik's Cube</a>
@@ -167,11 +167,11 @@
                     <table class="table table-bordered align-middle mb-0">
                         <tbody>
                         <tr>
-                            <td><img width="150" src="./roux-img/6e_3+1.png" alt=""></td>
-                            <td><img width="150" src="./roux-img/6e_2+2.png" alt=""></td>
-                            <td><img width="150" src="./roux-img/6e_2+0.png" alt=""></td>
-                            <td><img width="150" src="./roux-img/6e_1+1.png" alt=""></td>
-                            <td><img width="150" src="./roux-img/6e_4+0.png" alt=""></td>
+                            <td><img class="img-150" src="./roux-img/6e_3+1.png" alt=""></td>
+                            <td><img class="img-150" src="./roux-img/6e_2+2.png" alt=""></td>
+                            <td><img class="img-150" src="./roux-img/6e_2+0.png" alt=""></td>
+                            <td><img class="img-150" src="./roux-img/6e_1+1.png" alt=""></td>
+                            <td><img class="img-150" src="./roux-img/6e_4+0.png" alt=""></td>
                         </tr>
                         <tr>
                             <td>
@@ -214,7 +214,7 @@
                 </div>
             </div>
 
-            <!-- 第5组 后2棱 -->
+            <!-- 第6组 后2棱 -->
             <div class="card mb-4" id="step5-back">
                 <div class="card-header bg-light">
                     <strong>第6步 六棱块(6E) - 蓝绿棱块</strong>
@@ -223,9 +223,9 @@
                     <table class="table table-bordered align-middle mb-0">
                         <tbody>
                         <tr>
-                            <td><img width="150" src="./roux-img/6e_h2_bt-2.png" alt=""></td>
-                            <td><img width="150" src="./roux-img/6e_h2_bt.png" alt=""></td>
-                            <td><img width="150" src="./roux-img/6e_h2_02.png" alt=""></td>
+                            <td><img class="img-150" src="./roux-img/6e_h2_bt-2.png" alt=""></td>
+                            <td><img class="img-150" src="./roux-img/6e_h2_bt.png" alt=""></td>
+                            <td><img class="img-150" src="./roux-img/6e_h2_02.png" alt=""></td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -266,7 +266,7 @@
                 </div>
             </div>
 
-            <!-- 第6组 -->
+            <!-- 第7组 -->
             <div class="card mb-4" id="step6">
                 <div class="card-header bg-light">
                     <strong>第7步 四中心块(4C)</strong>
@@ -275,11 +275,11 @@
                     <table class="table table-bordered align-middle mb-0">
                         <tbody>
                         <tr>
-                            <td><img width="150" src="./roux-img/4c_o.png" alt=""></td>
-                            <td><img  width="150" src="./roux-img/4c_h.png" alt=""></td>
-                            <td><img  width="150" src="./roux-img/4c_n.png" alt=""></td>
-                            <td><img  width="150" src="./roux-img/4c_h2.png" alt=""></td>
-                            <td><img  width="150" src="./roux-img/4c_h3.png" alt=""></td>
+                            <td><img class="img-150" src="./roux-img/4c_o.png" alt=""></td>
+                            <td><img  class="img-150" src="./roux-img/4c_h.png" alt=""></td>
+                            <td><img  class="img-150" src="./roux-img/4c_n.png" alt=""></td>
+                            <td><img  class="img-150" src="./roux-img/4c_h2.png" alt=""></td>
+                            <td><img  class="img-150" src="./roux-img/4c_h3.png" alt=""></td>
                         </tr>
                         <tr>
                             <td>
@@ -351,27 +351,7 @@
             </nav>
         </div>
     </div>
-
 </div>
-
 <script src="./js/bootstrap.bundle.min.js"></script>
-
-<!-- 可选：自动高亮当前步骤 -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const navLinks = document.querySelectorAll('.step-nav-item');
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', function () {
-                // 先移除所有导航项的 active
-                navLinks.forEach(l => l.classList.remove('active'));
-                // 给当前点击的这个加 active
-                this.classList.add('active');
-                // 让浏览器照常跳转锚点
-            });
-        });
-    });
-</script>
-
 </body>
 </html>
